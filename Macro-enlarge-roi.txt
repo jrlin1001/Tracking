@@ -1,8 +1,0 @@
-start = getTime; 
-counts=roiManager("count");
-for(i=0; i<counts; i++) {
-    roiManager("Select", i);
-    run("Enlarge...", "enlarge=20");
-    roiManager("Update");
-}
-print((getTime-start)/1000); 
